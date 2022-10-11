@@ -1,3 +1,14 @@
+![image](https://github.com/nathsf/app-coder/blob/master/entregagif1.gif)
+![image](https://github.com/nathsf/app-coder/blob/master/entregagif2.gif)
+## Gif de la Segunda Entrega
+https://github.com/nathsf/app-coder/blob/master/entregagif1.gif \
+https://github.com/nathsf/app-coder/blob/master/entregagif2.gif
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
