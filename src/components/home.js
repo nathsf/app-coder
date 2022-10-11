@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function Home(props){
+export default function Home(){
 
     return(
 
-            <div>
-              <h2>Hola {props.name}</h2>
+            <div className="container mt-4">
+              <h2>¡Bienvenido! </h2>
               
             </div>
 

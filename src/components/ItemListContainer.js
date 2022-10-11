@@ -16,8 +16,8 @@ const ItemListContainer = () => {
   }
 
   return (
-    <div className="container">
-        <h1>Store Products</h1>
+    <div className="container mt-4">
+        <h1 >Store Products</h1>
         <div className="row">
         
         { products?.map( p => <div className="col-4"> <Card key={p.id}>

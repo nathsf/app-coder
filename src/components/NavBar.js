@@ -13,7 +13,7 @@ export default function NavBar() {
     <>
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand to="/">E-COMMERCE</Navbar.Brand>
+        <Navbar.Brand ><Link to="/" className="text-white text-decoration-none">ECOMMERCE</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

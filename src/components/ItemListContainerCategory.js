@@ -18,7 +18,7 @@ const ItemListContainerCategory = () => {
   }
 
   return (
-    <div className="container">
+    <div className="container mt-4">
         <h1>{category}</h1>
         <div className="row">
         
