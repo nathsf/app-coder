@@ -2,22 +2,24 @@ import { useEffect, useState } from "react"
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-const ItemListContainer = () => {
+const ItemListContainerCategory = () => {
+  const { category } = useParams()
   const [products, setProducts] = useState([])
   useEffect(() => {
     getProducts()
-  }, [])
+  }, [products])
   
   const getProducts = async() => {
-    const response = await fetch("https://fakestoreapi.com/products");
+    const response = await fetch("https://fakestoreapi.com/products/category/" + category);
     const data = await response.json();
     setProducts(data);
   }
 
   return (
     <div className="container">
-        <h1>Store Products</h1>
+        <h1>{category}</h1>
         <div className="row">
         
         { products?.map( p => <div className="col-4"> <Card key={p.id}>
@@ -38,4 +40,4 @@ const ItemListContainer = () => {
     </div>
   )
 }
-export default ItemListContainer
+export default ItemListContainerCategory

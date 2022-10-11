@@ -21,18 +21,21 @@ export default function NavBar() {
                 <Link to="/" className="text-white">Home</Link>
             </Nav.Link>
             <Nav.Link href="">
-                <Link to="/page" className="text-white">Link</Link>
+                <Link to="/products" className="text-white">Catálogo</Link>
             </Nav.Link>
             
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+            <NavDropdown title="Categorías" id="basic-nav-dropdown">
+              <NavDropdown.Item to="/products/electronics">
+                <Link to="/products/electronics" className="text-gray">electronics</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+              <NavDropdown.Item to="/products/jewelery">
+              <Link to="/products/jewelery/" className="text-gray">jewelery</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item to="/products/men's%20clothing" >
+              <Link to="/products/men's%20clothing/" className="text-gray">men's clothing</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item to="/products/women's%20clothing">
+              <Link to="/products/women's%20clothing/" className="text-gray">women's clothing</Link>
               </NavDropdown.Item>
             </NavDropdown>
             
